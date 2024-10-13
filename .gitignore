@@ -1,0 +1,100 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.env  # Ignore .env files with sensitive information
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.tox/
+.coverage
+*.cover
+.hypothesis/
+
+# Airflow
+airflow.cfg
+unittests.cfg
+airflow.db
+logs/  # Airflow logs directory
+
+# Docker
+docker-compose.override.yml
+**/*.yml
+.dockerignore
+docker-compose*.log
+docker-compose*.env
+
+# Docker volumes and data directories
+volumes/
+minio_data/
+postgres-data/
+redis-data/
+kafka-data/
+
+# Docker Compose
+.env  # Environment files
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# PySpark
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+
+# Kafka
+**/kafka-logs/
+**/zookeeper/
+**/zookeeper/version-2/
+
+# Redis
+dump.rdb
+appendonly.aof
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+
+# Ignore Python bytecode and compiled C extensions
+*.py[cod]
+
+# Minio
+minio_data/
+
+# IntelliJ IDEA (optional, if using as IDE)
+.idea/
+*.iml
+
+# VS Code (optional)
+.vscode/
+
+# JetBrains IDE (optional)
+.idea/
+
+# Ignore airflow-related files and configs
+.dagpickle
+airflow.db
+airflow-webserver.pid
+
+# Airflow dags, logs and plugins
+logs/
+plugins/
+
+# Coverage and test result files
+htmlcov/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
